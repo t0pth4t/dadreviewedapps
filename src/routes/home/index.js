@@ -23,31 +23,21 @@ const Home = () => {
 				</div>
 				<div class={style.quote}>
 					<div class={style.details}>
-						Jane presents traditional spanish art with a modern twist. Her work is
-						excellent quality, her technique is brilliant and her love of the
-						subject matter shines through.
+						Why can't I find a good list of educational apps for my toddler that aren't loaded with ads and dark patterns?!
 					</div>
-					<div class={style.author}>- The Local Newspaper</div>
+					<div class={style.author}>- Frustrated Parents</div>
 				</div>
 			</div>
 			<div class={style.bio}>
 				<p class={style.bioleft}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
+				I am just your average everyday father of two who wants to set my children up for success. 
+				While I try to minimize screen time as much as possible, my kids getting access to television and other digital media is unavoidable.
+				I wanted to make sure the time my kids spent in front of the screen was as educational as possible so I started looking for resources on what the best content is out there for kids.
+				All I could find were lists that were at best outdated but often times sponsered by the app creators. 
 				</p>
 				<p class={style.bioright}>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-					dolorem ipsum quia dolor sit amet, consectetur.
+					My intention with this site is to maintain lists of curated apps, games, and shows that are educational, fun and rewarding for children.
+					While I am no expert I am selfishly interested in provided the best for my kids so I figured why not share what I find for other parents.
 				</p>
 			</div>
 		</div>
