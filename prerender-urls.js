@@ -2,7 +2,7 @@ const { generateFileList } = require('./src/crawler');
 const { join } = require('path');
 const fs = require('fs');
 
-const [blogs] = generateFileList(join(process.cwd(), 'content')).nodes;
+const [blogs] = generateFileList('./content').nodes;
 module.exports = () => {
 	const pages = [
 		{

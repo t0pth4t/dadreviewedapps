@@ -24,6 +24,7 @@ function getFolders(source) {console.log(source)
 	const getAllListings = source =>
 		fs.readdirSync(source).map(name => join(source, name));
 	let allContent = getAllListings(source);
+	console.log(allContent)
 	const edges = allContent.filter(isFile).map(file => {
 		const data = fs.readFileSync(file, 'utf-8');
 		return {
