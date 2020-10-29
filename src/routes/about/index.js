@@ -2,7 +2,7 @@ import { h } from "preact";
 import { useEffect } from 'preact/hooks';
 import style from "./style";
 
-const Home = () => {
+const About = () => {
 	/*
 	 * Netlify CMS's accept invite link land on home page.
 	 * This redirection takes it to the right place(/admin).
@@ -44,4 +44,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default About;
