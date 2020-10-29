@@ -29,8 +29,8 @@ export default class App extends Component {
 					<Router onChange={this.handleRoute}>
 						<Blogs path="/" />
 						<Home path="/about" />
-						<Blogs path="/reviews/" />
-						<Blog path="/reviews/:name" />
+						<Blogs path="/blogs/" />
+						<Blog path="/blogs/:name" />
 						<Contact path="/contact/" />
 						<ContactSuccess path="/contact/success" />
 						<NotFoundPage type="404" default />
