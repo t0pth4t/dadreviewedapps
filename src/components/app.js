@@ -29,7 +29,7 @@ export default class App extends Component {
 					<Router onChange={this.handleRoute}>
 						<Home path="/" />
 						<Blogs path="/blogs/" />
-						<Blog path="/blogs/:name" />
+						<Blog path="/blog/:name" />
 						<Contact path="/contact/" />
 						<ContactSuccess path="/contact/success" />
 						<NotFoundPage type="404" default />
