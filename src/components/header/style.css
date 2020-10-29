@@ -1,7 +1,12 @@
 .header {
 	height: 100px;;
 }
-
+/* --celadon: #a6d49fff;
+--olivine: #9cb380ff;
+--caput-mortuum: #522a27ff;
+--vermilion: #c73e1dff;
+--satin-sheen-gold: #c59849ff; */
+/*393e46*/
 .header h1 {
 	float: left;
 	margin: 0;
@@ -9,8 +14,8 @@
 	font-size: 40px;
 	line-height: 100px;
 	font-weight: 400;
-	font-family: 'Courgette', 'Helvetica Neue', arial, sans-serif;;
-	color: #FFC107;
+	/* font-family: 'Courgette', 'Helvetica Neue', arial, sans-serif;; */
+	color: #393e46;
 }
 
 .header nav {
@@ -38,13 +43,13 @@
 .header nav a:hover,
 .header nav a:active,
 .header nav a.active {
-	color: #FFC107;
+	color: #00adb5;
 }
 
 .header nav a:after {
 	content: '';
 	width: 0%;
-	border-bottom: 3px solid #FFC107;
+	border-bottom: 3px solid #00adb5;
 	position: absolute;
 	bottom: -12px;
 	left: 0;

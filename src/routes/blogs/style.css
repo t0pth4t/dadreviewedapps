@@ -15,7 +15,7 @@
   left: 0px;
   content: '';
   width: 75%;
-  border-bottom: 2px solid #FFC107;
+  border-bottom: 2px solid #00adb5;
 }
 
 h2 {
@@ -28,7 +28,7 @@ h2 {
   padding: 4px 8px;
   margin-left: 8px;
   text-transform: lowercase;
-  background-color: #ffdd037c;
+  background-color: #00adb5;
   border-radius: 5px;
   color: #999;
   font-size: 12px;
