@@ -29,14 +29,14 @@ const sections = [
   { title: 'Travel', url: '#' },
 ];
 
-const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
-  description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random',
-  imgText: 'main image description',
-  linkText: 'Continue reading…',
-};
+// const mainFeaturedPost = {
+//   title: 'Title of a longer featured blog post',
+//   description:
+//     "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+//   image: 'https://source.unsplash.com/random',
+//   imgText: 'main image description',
+//   linkText: 'Continue reading…',
+// };
 
 const featuredPosts = [
   {
@@ -78,6 +78,8 @@ const sidebar = {
 export default function Blog() {
   const classes = useStyles();
   const [data, isLoading] = usePrerenderData({path: "/", url: "/",matches:{}});
+  const {data: {edges:blogs}} = data;
+  const mainFeaturedPost = blogs[0];
   return (
     <React.Fragment>
       
@@ -85,11 +87,10 @@ export default function Blog() {
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
-              
-            {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))}
-                
+  
+               {blogs.slice(1).map((post) => (
+              <FeaturedPost key={post.details.title} post={post} />
+            ))} 
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
             <Main title="From the firehose" posts={posts} />

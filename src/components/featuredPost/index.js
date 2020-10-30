@@ -32,22 +32,22 @@ export default function FeaturedPost(props) {
           <div className={classes.cardDetails}>
             <CardContent>
               <Typography component="h2" variant="h5">
-                {post.title}
+                {post.details.title}
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                {post.date}
+                {post.details.date}
               </Typography>
               <Typography variant="subtitle1" paragraph>
-                {post.description}
+                {post.details.preview}
               </Typography>
               <Typography variant="subtitle1" color="primary">
                 Continue reading...
               </Typography>
             </CardContent>
           </div>
-          <Hidden xsDown>
+          {/* <Hidden xsDown>
             <CardMedia className={classes.cardMedia} image={post.image} title={post.imageTitle} />
-          </Hidden>
+          </Hidden> */}
         </Card>
       </CardActionArea>
     </Grid>

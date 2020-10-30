@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { join } = require('path');
 
-function getDetails(data) {
-	const matadata = data.match(/---(.*\n)*---/)[0];
+function getDetails(data) {	
+	const matadata = data.match(/---([\S\s]*?)---/)[0];
 	const details =  matadata.match(/(.*):(.*)/g).reduce((obj, detail) => {
 		const value = detail.substr(detail.indexOf(':') + 2);
 		const key = detail.substr(0, detail.indexOf(':'));
@@ -13,7 +13,7 @@ function getDetails(data) {
 }
 
 function getPreview(data) {
-	let preview = data.replace(/---(.*\n)*---/, '').replace(/\[.*\]\(.*\)/g, '').replace(/\n/,'');
+	let preview = data.replace(/---([\S\s]*?)---/, '').replace(/\[.*\]\(.*\)/g, '').replace(/\n/,'');
 	preview = preview.substr(0, (preview.indexOf('\n') -1));
 	return preview.length < 500? preview : preview.substr(0, 500);
 }
@@ -26,7 +26,9 @@ function getFolders(source) {console.log(source)
 	let allContent = getAllListings(source);
 	console.log(allContent)
 	const edges = allContent.filter(isFile).map(file => {
+		console.log(file)
 		const data = fs.readFileSync(file, 'utf-8');
+		console.log('DATA: ' + data)
 		return {
 			id: file.substr(file.lastIndexOf('/') + 1),
 			path: file,
