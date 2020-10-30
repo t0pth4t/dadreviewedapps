@@ -22,26 +22,27 @@ export default class App extends Component {
 	handleRoute = e => {
 		this.currentUrl = e.url;
 	};
-	 
+
 	render(props) {
 		return (
 			<Provider value={props}>
 				<div id="app">
-				<CssBaseline />
-      <Container maxWidth="lg">
-					<Header title="Dad Reviewed Apps" sections={[
-		{title: 'Reviews', url:'/blogs'},
-		{title: 'About', url:'/about'}
-	  ]} />
-					<Router onChange={this.handleRoute}>
-						<Home path="/" />
-						<Blogs path="/blogs/" />
-						<Blog path="/blog/:name" />
-						<About path="/about" />
-						<Contact path="/contact/" />
-						<ContactSuccess path="/contact/success" />
-						<NotFoundPage type="404" default />
-					</Router>
+					<CssBaseline />
+					<Container maxWidth="lg">
+						<Header title="Dad Reviewed Apps" sections={[
+							{ title: 'Home', url: '/' },
+							{ title: 'Reviews', url: '/blogs' },
+							{ title: 'About', url: '/about' }
+						]} />
+						<Router onChange={this.handleRoute}>
+							<Home path="/" />
+							<Blogs path="/blogs/" />
+							<Blog path="/blog/:name" />
+							<About path="/about" />
+							<Contact path="/contact/" />
+							<ContactSuccess path="/contact/success" />
+							<NotFoundPage type="404" default />
+						</Router>
 					</Container>
 				</div>
 			</Provider>

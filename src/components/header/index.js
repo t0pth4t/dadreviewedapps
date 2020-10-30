@@ -31,7 +31,7 @@ export default function Header(props) {
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
-        <Button size="small">Subscribe</Button>
+        {/* <Button size="small">Subscribe</Button> */}
         <Typography
           component="h2"
           variant="h5"
@@ -42,12 +42,12 @@ export default function Header(props) {
         >
           {title}
         </Typography>
-        <IconButton>
+        {/* <IconButton>
           <SearchIcon />
-        </IconButton>
-        <Button variant="outlined" size="small">
-          Sign up
-        </Button>
+        </IconButton> */}
+        {/* <Button variant="outlined" size="small"> */}
+          {/* Sign up */}
+        {/* </Button> */}
       </Toolbar>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         

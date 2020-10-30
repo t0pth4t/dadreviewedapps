@@ -20,9 +20,14 @@ module.exports = () => {
 		url: '/blogs/',
 		data: blogs
 	});
+	pages.push({
+		url: '/',
+		data: blogs
+	})
 
 	// adding all blog pages
 	pages.push(...blogs.edges.map(blog => {
+		
 		const data = fs.readFileSync(blog.path, 'utf-8').replace(/---(.*\n)*---/, '');
 		return {
 			url: `/blog/${blog.id}`,
