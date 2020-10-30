@@ -6,6 +6,14 @@ subtitle: Curated list of the most educational free apps for your toddler to use
 cover: /assets/people-2564425_1920.jpg
 tags: toddlers, free, app, educational
 ---
-# Khan Academy Kids
+# 1. Khan Academy Kids
 
 Khan Academy Kids is by far and away the most educational free application for children. It is ***completely free*** with no dark patterns or advertising.
+
+[Download for Android](https://play.google.com/store/apps/details?id=org.khankids.android&hl=en_US&gl=US)
+
+[Download for iOS](https://apps.apple.com/us/app/khan-academy-kids/id1378467217)
+
+# 2. Duolingo abc
+
+Another great free app for children
