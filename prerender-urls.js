@@ -26,7 +26,7 @@ module.exports = () => {
 	// adding all blog pages
 	pages.push(...blogs.edges.map(blog => {
 		console.log(blog)
-		const data = fs.readFileSync(blog.path, 'utf-8').replace(/---(.*\n)*---/, '');
+		const data = fs.readFileSync(blog.path, 'utf-8').replace(/---([\S\s]*?)---/, '');
 		return {
 			url: `/blog/${blog.id}`,
 			seo: blog.details,

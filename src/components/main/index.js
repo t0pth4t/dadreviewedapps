@@ -4,8 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import Markdown from '../markdown';
-
+import Link from '@material-ui/core/Link';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import Avatar from '@material-ui/core/Avatar';
 const useStyles = makeStyles((theme) => ({
   markdown: {
     ...theme.typography.body2,
@@ -23,11 +27,30 @@ export default function Main(props) {
         {title}
       </Typography>
       <Divider />
+      <List className={classes.root}>
       {posts.map((post) => (
-        <Markdown className={classes.markdown} key={post.substring(0, 40)}>
-          {post}
-        </Markdown>
+        <Link href={`/blog/${post.id}`}>
+         <ListItem alignItems="flex-start">
+         <ListItemText
+           primary={post.details.title} 
+           secondary={
+             <React.Fragment>
+               <Typography
+                 component="span"
+                 variant="body2"
+                 className={classes.inline}
+                 color="textPrimary"
+               >
+               </Typography>
+               {post.details.subtitle} 
+             </React.Fragment>
+           }
+         />
+       </ListItem>
+       <Divider variant="inset" component="li" />
+        </Link>
       ))}
+      </List>
     </Grid>
   );
 }

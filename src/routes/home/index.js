@@ -64,12 +64,8 @@ const posts=[]
 const sidebar = {
   title: 'About',
   description:
-    'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
-  archives: [
-
-  ],
+    'Curated lists of curated apps, games, and shows that are educational, fun and rewarding for children.',
   social: [
-    { name: 'GitHub', icon: GitHubIcon },
     { name: 'Twitter', icon: TwitterIcon },
     { name: 'Facebook', icon: FacebookIcon },
   ],
@@ -93,7 +89,7 @@ export default function Blog() {
             ))} 
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
-            <Main title="From the firehose" posts={posts} />
+            <Main title="From the firehose" posts={blogs} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
