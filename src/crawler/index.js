@@ -14,7 +14,7 @@ function getDetails(data) {
 
 function getPreview(data) {
 	let preview = data.replace(/---([\S\s]*?)---/, '').replace(/\[.*\]\(.*\)/g, '').replace(/\n/,'');
-	preview = preview.substr(0, (preview.indexOf('\n') -1));
+	preview = preview.substr(0, preview.length >= 500 ? 500: preview.length);
 	return preview.length < 500? preview : preview.substr(0, 500);
 }
 

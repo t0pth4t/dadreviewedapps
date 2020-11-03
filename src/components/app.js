@@ -12,6 +12,7 @@ import Blog from '../routes/blog';
 import Contact from '../routes/contact';
 import ContactSuccess from '../routes/contact-success';
 import About from '../routes/about';
+import {createHashHistory} from 'history';
 
 export default class App extends Component {
 
@@ -34,7 +35,7 @@ export default class App extends Component {
 							{ title: 'Reviews', url: '/blogs' },
 							{ title: 'About', url: '/about' }
 						]} />
-						<Router onChange={this.handleRoute}>
+						<Router  history={createHashHistory()}>
 							<Home path="/" />
 							<Blogs path="/blogs/" />
 							<Blog path="/blog/:name" />
