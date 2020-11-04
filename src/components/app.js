@@ -35,7 +35,7 @@ export default class App extends Component {
 							{ title: 'Reviews', url: '/blogs' },
 							{ title: 'About', url: '/about' }
 						]} />
-						<Router  history={createHashHistory()}>
+						<Router onChange={this.handleRoute} history={typeof window !== undefined ? createHashHistory() : ()=>{}}>
 							<Home path="/" />
 							<Blogs path="/blogs/" />
 							<Blog path="/blog/:name" />

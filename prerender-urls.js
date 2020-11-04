@@ -1,7 +1,6 @@
 const { generateFileList } = require('./src/crawler');
 const { join } = require('path');
 const fs = require('fs');
-// const path = 'C:\\dev\\dadreviewedapps\\dadreviewedapps\\content'
 const path = './content'
 const [blogs] = generateFileList(path).nodes;
 console.log(blogs)

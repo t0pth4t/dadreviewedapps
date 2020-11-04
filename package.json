@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "preact build --prerenderUrls ./prerender-urls.js",
+    "build": "preact build --no-prerender --prerenderUrls ./prerender-urls.js",
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch --prerenderUrls ./prerender-urls.js",
     "lint": "eslint src",
@@ -27,7 +27,7 @@
     "per-env": "^1.0.2",
     "preact-cli": "^3.0.0",
     "preact-render-spy": "^1.2.1",
-    "sirv-cli": "1.0.3",
+    "sirv-cli": "1.0.8",
     "webpack-bundle-analyzer": "^3.4.1"
   },
   "dependencies": {
@@ -35,9 +35,9 @@
     "@material-ui/icons": "^4.9.1",
     "@preact/prerender-data-provider": "^3.0.0",
     "history": "^5.0.0",
-    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
-    "markdown-to-jsx": "^6.10.3",
+    "markdown-to-jsx": "^7.0.1",
     "preact": "^10.0.0",
     "preact-cli-plugin-netlify": "^1.5.0",
     "preact-render-to-string": "^5.0.6",
