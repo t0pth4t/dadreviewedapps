@@ -17,3 +17,13 @@ Khan Academy Kids is by far and away the most educational free application for c
 # 2. Duolingo abc
 
 Another great free app for children
+
+[Download for iOS] (https://apps.apple.com/app/apple-store/id1440502568?mt=8)
+
+# 3. PBS Kids Games
+
+Completely free and Ad-free. Games have to be individually downloaded which can frustrate impatient kids (and parents). Hard to judge quality of individual quality and education of each app before downloading.
+
+Works a lot better on iOS than Android
+
+[Download for Android](https://play.google.com/store/apps/details?id=org.pbskids.gamesapp)
